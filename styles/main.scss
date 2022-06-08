@@ -1,0 +1,26 @@
+@import "./rose-pine-theme";
+
+$primary:    $rp-dawn-surface;
+$secondary:  $rp-dawn-overlay;
+$success:    $rp-dawn-foam;
+$info:       $rp-dawn-pine;
+$warning:    $rp-dawn-gold;
+$danger:     $rp-dawn-love;
+$light:      $rp-dawn-base;
+$dark:       $rp-dawn-text;
+$body-bg:    $light;
+$btn-link-color: $light;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.btn {
+    --#{$prefix}btn-color: #{$light};
+}
+
+.btn:active, .btn.active {
+    --#{$prefix}btn-active-color: #{$secondary};
+}
+
+.btn:hover, .btn:focus {
+    --#{$prefix}btn-hover-color: #{$primary};
+}

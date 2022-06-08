@@ -11,16 +11,16 @@ $dark:       $rp-dawn-text;
 $body-bg:    $light;
 $btn-link-color: $light;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
 
 .btn {
-    --#{$prefix}btn-color: #{$light};
+    --btn-color: #{$light};
 }
 
 .btn:active, .btn.active {
-    --#{$prefix}btn-active-color: #{$secondary};
+    --btn-active-color: #{$secondary};
 }
 
 .btn:hover, .btn:focus {
-    --#{$prefix}btn-hover-color: #{$primary};
+    --btn-hover-color: #{$primary};
 }

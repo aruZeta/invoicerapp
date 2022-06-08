@@ -4,6 +4,9 @@
   "description": "An app I made for my father to make invoices more easily, anywhere with anything (that can accesss the web).",
   "main": "index.js",
   "scripts": {
+    "generate-css": "sass -t compressed --update ./styles/main.scss:./styles/build/generated.css",
+    "reduce-css": "purgecss --css styles/build/generated.css --content index.html --output styles/build/reduced.css",
+    "build-css": "npm run generate-css && npm run reduce-css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/aru-hackZ/invoicerapp/issues"
   },
-  "homepage": "https://github.com/aru-hackZ/invoicerapp#readme"
+  "homepage": "https://github.com/aru-hackZ/invoicerapp#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "purgecss": "^4.1.3"
+  }
 }

@@ -1,0 +1,19 @@
+{
+  "name": "invoicerapp",
+  "version": "1.0.0",
+  "description": "An app I made for my father to make invoices more easily, anywhere with anything (that can accesss the web).",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aru-hackZ/invoicerapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aru-hackZ/invoicerapp/issues"
+  },
+  "homepage": "https://github.com/aru-hackZ/invoicerapp#readme"
+}

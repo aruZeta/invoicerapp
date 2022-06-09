@@ -1,8 +1,12 @@
 import './styles/main.scss';
 
+import MyNavbar from './Navbar/Navbar';
+
 function App() {
     return (
-        <h1>Hello, world</h1>
+        <div id="App" className="min-vh-100">
+            <MyNavbar />
+        </div>
     );
 }
 

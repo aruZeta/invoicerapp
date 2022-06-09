@@ -11,7 +11,7 @@ $dark:       $rp-dawn-text;
 $body-bg:    $light;
 $btn-link-color: $light;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
 
 .btn {
     --#{$prefix}btn-color: #{$light};

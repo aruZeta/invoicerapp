@@ -1,13 +1,14 @@
 import { Button, Container } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
-const MyHomeContainer = () => {
+const MyContainer = () => {
     return (
         <Container fluid="lg" className="flex-fill d-flex">
-            <a href="invoices/new" className="m-auto">
+            <LinkContainer to="/invoices/new" className="m-auto">
                 <Button variant="success">New Invoice</Button>
-            </a>
+            </LinkContainer>
         </Container>
     );
 };
 
-export default MyHomeContainer;
+export default MyContainer;

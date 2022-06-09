@@ -1,14 +1,19 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 const MyNavbar = () => {
     return (
         <Navbar variant="dark" bg="dark" expand="md">
             <Container fluid>
-                <Navbar.Brand href="#">Icon</Navbar.Brand>
+                <LinkContainer to="/">
+                    <Navbar.Brand>Icon</Navbar.Brand>
+                </LinkContainer>
                 <Navbar.Toggle aria-controls="Navbar-Nav" />
                 <Navbar.Collapse id="Navbar-Nav">
                     <Nav>
-                        <Nav.Link href="#">Home</Nav.Link>
+                        <LinkContainer to="/">
+                            <Nav.Link>Home</Nav.Link>
+                        </LinkContainer>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

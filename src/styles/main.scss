@@ -14,13 +14,13 @@ $btn-link-color: $light;
 @import "~bootstrap/scss/bootstrap";
 
 .btn {
-    --btn-color: #{$light};
+    --#{$prefix}btn-color: #{$light};
 }
 
 .btn:active, .btn.active {
-    --btn-active-color: #{$secondary};
+    --#{$prefix}btn-active-color: #{$secondary};
 }
 
 .btn:hover, .btn:focus {
-    --btn-hover-color: #{$primary};
+    --#{$prefix}btn-hover-color: #{$primary};
 }

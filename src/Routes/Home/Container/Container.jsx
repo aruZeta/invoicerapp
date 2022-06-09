@@ -1,7 +1,7 @@
 import { Button, Container } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
-const MyHomeContainer = () => {
+const MyContainer = () => {
     return (
         <Container fluid="lg" className="flex-fill d-flex">
             <LinkContainer to="/invoices/new" className="m-auto">
@@ -11,4 +11,4 @@ const MyHomeContainer = () => {
     );
 };
 
-export default MyHomeContainer;
+export default MyContainer;

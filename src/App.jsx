@@ -3,7 +3,7 @@ import './styles/main.scss';
 import { BrowserRouter } from 'react-router-dom';
 
 import MyNavbar from './Navbar/Navbar';
-import MyRoutes from './Routes';
+import MyRoutes from './Routes/Routes';
 
 const App = () => {
     return (

@@ -23,7 +23,7 @@ const HeaderDetails = () =>
             <MyInput className="text-end" type="text" placeholder="CP" />
         </Form.Group>
         <Form.Group>
-            <MyInput className="text-end" type="text" placeholder="Fecha" />
+            <MyInput className="text-end" type="text" placeholder="Date" />
         </Form.Group>
     </div>
     <div className="d-flex gap-2">

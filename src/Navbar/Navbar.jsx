@@ -12,7 +12,7 @@ const MyNavbar = () =>
         <Navbar.Toggle aria-controls="Navbar-Nav" />
         <Navbar.Collapse id="Navbar-Nav">
             <Nav>
-                <LinkContainer to="/">
+                <LinkContainer to="/invoicerapp">
                     <Nav.Link>Home</Nav.Link>
                 </LinkContainer>
             </Nav>

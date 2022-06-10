@@ -5,8 +5,8 @@ import New from './Invoices/New/New';
 
 const MyRoutes = () =>
 <Routes>
-    <Route exact path="/" element={<Home />} />
-    <Route exact path="/invoices/new" element={<New />} />
+    <Route exact path="/invoicerapp" element={<Home />} />
+    <Route exact path="/invoicerapp/invoices/new" element={<New />} />
 </Routes>;
 
 export default MyRoutes;

@@ -15,12 +15,6 @@ const MyInput = ({type, placeholder, className, required}) => {
     );
 }
 
-const MyLabel = ({className, children}) => {
-    return (
-        <Form.Label className={`px-1 m-0 flex-shrink-0 ${className}`}>{children}</Form.Label>
-    );
-}
-
 const Invoice = () => {
     return (
         <Form className={`invoice mx-auto ${border} ${rounded}`}>

@@ -36,8 +36,12 @@ const MyContainer = () => {
                 <Col className="mb-4"><InvoicePage /></Col>
                 {invoicePagesExtra()}
                 <Col>
-                    <Button onClick={handleClick()} variant="dark" className="new-invoice-btn mx-auto d-block">
-                        New Invoice
+                    <Button
+                        onClick={handleClick()}
+                        variant="dark"
+                        className="new-invoice-btn mx-auto d-block"
+                    >
+                        New Page
                     </Button>
                 </Col>
             </Row>

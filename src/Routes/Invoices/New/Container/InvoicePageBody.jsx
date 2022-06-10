@@ -3,7 +3,7 @@ import { Button, Card, Table } from "react-bootstrap";
 
 import MyInput from './MyInput';
 
-const TableEntrie = () => {
+const TableEntry = () => {
     const taRef = useRef(null);
     const [taHeight, setTaHeight] = useState("auto"); 
     
@@ -36,19 +36,19 @@ const InvoicePageBody = () => {
         return 1;
     });
 
-    const addTableEntrie = () => {
+    const addTableEntry = () => {
         setTableEntriesCount(tableEntriesCount + 1);
     };
 
     const handleClick = () => {
-        return () => addTableEntrie();
+        return () => addTableEntry();
     }
 
     const tableEntriesExtra = () => {
         const invoicePages = [];
         for (let i = 1; i < tableEntriesCount; i++) {
             invoicePages.push(
-                <TableEntrie key={i} />
+                <TableEntry key={i} />
             )
         }
 
@@ -61,14 +61,14 @@ const InvoicePageBody = () => {
                 <Table className="mb-0">
                     <thead>
                         <tr>
-                            <td className="text-center">Concepto</td>
-                            <td className="text-end">Cantidad</td>
-                            <td className="text-end">Precio</td>
-                            <td className="text-end">Importe</td>
+                            <td className="text-center">Description</td>
+                            <td className="text-end">Quantity</td>
+                            <td className="text-end">Price</td>
+                            <td className="text-end">Total</td>
                         </tr>
                     </thead>
                     <tbody>
-                        <TableEntrie />
+                        <TableEntry />
                         {tableEntriesExtra()}
                     </tbody>
                 </Table>
@@ -77,7 +77,7 @@ const InvoicePageBody = () => {
                     variant="dark"
                     className="w-100 d-block"
                 >
-                    New Entrie
+                    New Entry
                 </Button>
             </Card.Body>
         </Card>

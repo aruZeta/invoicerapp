@@ -1,8 +1,7 @@
+import { useState } from "react";
 import { Card, Col, Form, Image, Row } from "react-bootstrap";
 
 import MyInput from './MyInput';
-
-const placeholder = "https://via.placeholder.com/330x140/f2e9e1/575279?text=invoicerapp";
 
 const HeaderDetails = () =>
 <Card.Body className="p-2 d-flex flex-column gap-2">
@@ -38,16 +37,45 @@ const HeaderDetails = () =>
     </div>
 </Card.Body>;
 
-const InvoicePageHeader = () =>
-<Row>
-    <Col xs={5}>
-        <Image fluid rounded src={placeholder} className="w-100 h-100" />
-    </Col>
-    <Col xs={7}>
-        <Card bg="light" className="w-100 h-100">
-            <HeaderDetails />
-        </Card>
-    </Col>
-</Row>;
+const InvoicePageHeader = () => {
+    const [image, setImage] = useState(
+        "https://via.placeholder.com/330x140/f2e9e1/575279?text=Click to change"
+    );
+
+    const changeImage = (event) => {
+        console.log(event.target.files[0]);
+        setImage(URL.createObjectURL(event.target.files[0]));
+    };
+
+    const handleChange = () => {
+        return (event) => changeImage(event);
+    }
+    
+    return (
+        <Row>
+            <Col xs={5}>
+                <div className="position-relative w-100 h-100">
+                    <input
+                        type="file"
+                        accept="image/*"
+                        className="position-absolute w-100 h-100 opacity-0"
+                        onChange={handleChange()}
+                    />
+                    <Image
+                        fluid
+                        rounded
+                        src={image}
+                        className="w-100 h-100"
+                    />
+                </div>
+            </Col>
+            <Col xs={7}>
+                <Card bg="light" className="w-100 h-100">
+                    <HeaderDetails />
+                </Card>
+            </Col>
+        </Row>
+    );
+};
 
 export default InvoicePageHeader;

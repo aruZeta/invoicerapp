@@ -1,8 +1,7 @@
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 
 import InvoicePage from './InvoicePage';
-import InvoicePageExtra from './InvoicePageExtra';
 
 const MyContainer = () => {
     const [invoicePagesCount, setInvoicePagesCount] = useState(() => {
@@ -22,7 +21,7 @@ const MyContainer = () => {
         for (let i = 1; i < invoicePagesCount; i++) {
             invoicePages.push(
                 <Col key={i} className="mb-4">
-                    <InvoicePageExtra />
+                    <InvoicePage extra={true} />
                 </Col>
             )
         }

@@ -31,7 +31,14 @@ $font-size-root:              16px;
     --#{$prefix}btn-hover-color: #{$primary};
 }
 
+$invoice-max-width: 21cm;
+
 .invoice {
-    max-width: 21cm;
+    max-width: $invoice-max-width;
     height: 29.69cm;
+}
+
+.new-invoice-btn {
+    width: 100%;
+    max-width: $invoice-max-width;
 }

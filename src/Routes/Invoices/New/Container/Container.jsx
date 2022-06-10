@@ -1,8 +1,10 @@
 import { Col, Container, Row } from 'react-bootstrap';
 
+import Invoice from './Invoice';
+
 const NewInvoice = () => {
     return (
-        <Col className="mb-4"><p>Invoice</p></Col>
+        <Col className="mb-4"><Invoice /></Col>
     );
 };
 

@@ -30,3 +30,8 @@ $font-size-root:              16px;
 .btn:hover, .btn:focus {
     --#{$prefix}btn-hover-color: #{$primary};
 }
+
+.invoice {
+    max-width: 21cm;
+    height: 29.7cm;
+}

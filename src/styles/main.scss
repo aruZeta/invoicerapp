@@ -40,6 +40,10 @@ $invoice-max-width: 21cm;
     textarea {
         resize: none;
     }
+
+    table > tbody tr:last-child td {
+        border-bottom: none !important;
+    }
 }
 
 .new-invoice-btn {

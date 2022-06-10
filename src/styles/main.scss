@@ -1,0 +1,82 @@
+@import "./rose-pine-theme";
+
+$primary:    $rp-dawn-surface;
+$secondary:  $rp-dawn-overlay;
+$success:    $rp-dawn-foam;
+$info:       $rp-dawn-pine;
+$warning:    $rp-dawn-gold;
+$danger:     $rp-dawn-love;
+$light:      $rp-dawn-base;
+$dark:       $rp-dawn-text;
+$body-bg:    $light;
+$btn-link-color: $light;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+$font-family-base: 'Fira Sans', sans-serif;
+
+$font-size-root:              16px;
+
+@import "~bootstrap/scss/bootstrap";
+
+.btn {
+    --#{$prefix}btn-color: #{$light};
+}
+
+.btn:active, .btn.active {
+    --#{$prefix}btn-active-color: #{$secondary};
+}
+
+.btn:hover, .btn:focus {
+    --#{$prefix}btn-hover-color: #{$primary};
+}
+
+$invoice-max-width: 21cm;
+
+.invoice {
+    max-width: $invoice-max-width;
+    height: 29.69cm;
+
+    textarea {
+        resize: none;
+    }
+
+    table > tbody tr:last-child td {
+        border-bottom: none !important;
+    }
+}
+
+.new-invoice-btn {
+    width: 100%;
+    max-width: $invoice-max-width;
+}
+
+// note: better open a new page and print from there
+@media print {
+    .mt-4, .mb-4, .container-fluid {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .invoice {
+        border: none !important;
+
+        table + button {
+            display: none !important;
+        }
+    }
+
+    .new-invoice-btn {
+        display: none !important;
+    }
+
+    input, textarea {
+        &.border-bottom {
+            border: none !important;
+        }
+    }
+}

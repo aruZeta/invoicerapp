@@ -50,3 +50,33 @@ $invoice-max-width: 21cm;
     width: 100%;
     max-width: $invoice-max-width;
 }
+
+// note: better open a new page and print from there
+@media print {
+    .mt-4, .mb-4, .container-fluid {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .invoice {
+        border: none !important;
+
+        table + button {
+            display: none !important;
+        }
+    }
+
+    .new-invoice-btn {
+        display: none !important;
+    }
+
+    input, textarea {
+        &.border-bottom {
+            border: none !important;
+        }
+    }
+}

@@ -1,14 +1,8 @@
 import { Card, Col, Form, Image, Row } from "react-bootstrap";
 
-const placeholder = "https://via.placeholder.com/330x140/f2e9e1/575279?text=invoicerapp";
+import MyInput from './MyInput';
 
-const MyInput = ({type, placeholder, className, required}) =>
-<Form.Control
-    className={`lh-0 py-0 px-1 border-0 border-bottom border-1 rounded-0 ${className}`}
-    type={type}
-    placeholder={placeholder}
-    required={required ? true : false}
-/>;
+const placeholder = "https://via.placeholder.com/330x140/f2e9e1/575279?text=invoicerapp";
 
 const HeaderDetails = () =>
 <Card.Body className="p-2 d-flex flex-column gap-2">

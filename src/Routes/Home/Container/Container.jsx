@@ -3,7 +3,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 const MyContainer = () =>
 <Container fluid="lg" className="flex-fill d-flex">
-    <LinkContainer to="/invoices/new" className="m-auto">
+    <LinkContainer to="invoices/new" className="m-auto">
         <Button variant="success">New Invoice</Button>
     </LinkContainer>
 </Container>;

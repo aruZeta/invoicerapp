@@ -4,9 +4,11 @@ import { LinkContainer } from 'react-router-bootstrap';
 const MyNavbar = () =>
 <Navbar variant="dark" bg="dark" expand="md">
     <Container fluid>
-        <LinkContainer to="/">
-            <Navbar.Brand>Icon</Navbar.Brand>
-        </LinkContainer>
+        {
+        // <LinkContainer to="/">
+            // <Navbar.Brand>Icon</Navbar.Brand>
+        // </LinkContainer>
+        }
         <Navbar.Toggle aria-controls="Navbar-Nav" />
         <Navbar.Collapse id="Navbar-Nav">
             <Nav>

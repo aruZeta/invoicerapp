@@ -11,6 +11,12 @@ $dark:       $rp-dawn-text;
 $body-bg:    $light;
 $btn-link-color: $light;
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+$font-family-base: 'Fira Sans', sans-serif;
+
+$font-size-root:              16px;
+
 @import "~bootstrap/scss/bootstrap";
 
 .btn {

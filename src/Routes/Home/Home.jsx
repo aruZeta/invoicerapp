@@ -1,11 +1,10 @@
+import { Fragment } from 'react';
+
 import MyContainer from './Container/Container';
 
-const Home = () => {
-    return (
-        <>
-            <MyContainer />
-        </>
-    );
-};
+const Home = () =>
+<Fragment>
+    <MyContainer />
+</Fragment>;
 
 export default Home;

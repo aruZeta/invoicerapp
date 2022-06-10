@@ -4,9 +4,7 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 import InvoicePage from './InvoicePage';
 
 const MyContainer = () => {
-    const [invoicePagesCount, setInvoicePagesCount] = useState(() => {
-        return 1;
-    });
+    const [invoicePagesCount, setInvoicePagesCount] = useState(1);
 
     const addInvoicePage = () => {
         setInvoicePagesCount(invoicePagesCount + 1);

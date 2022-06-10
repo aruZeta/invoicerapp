@@ -10,7 +10,7 @@ const MyInput = ({type, placeholder, className, required}) =>
     required={required ? true : false}
 />;
 
-const InvoiceHeader = () =>
+const InvoicePageHeader = () =>
 <Row>
     <Col xs={5}>
         <Image fluid rounded src={placeholder} className="w-100 h-100" />
@@ -53,4 +53,4 @@ const InvoiceHeader = () =>
     </Col>
 </Row>;
 
-export default InvoiceHeader;
+export default InvoicePageHeader;

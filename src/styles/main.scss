@@ -36,6 +36,10 @@ $invoice-max-width: 21cm;
 .invoice {
     max-width: $invoice-max-width;
     height: 29.69cm;
+
+    textarea {
+        resize: none;
+    }
 }
 
 .new-invoice-btn {

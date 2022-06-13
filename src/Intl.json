@@ -1,10 +1,14 @@
 {
     "en": {
         "flag": "🇬🇧",
-        "name": "English"
+        "name": "English",
+        "navbar.home": "Home Page",
+        "home.newInvoiceBtn": "New Invoice"
     },
     "es": {
         "flag": "🇪🇸",
-        "name": "Spanish"
+        "name": "Spanish",
+        "navbar.home": "Página Principal",
+        "home.newInvoiceBtn": "Nueva Factura"
     }
 }

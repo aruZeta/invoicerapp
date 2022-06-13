@@ -1,4 +1,5 @@
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { FormattedMessage } from 'react-intl';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const LangDropdownItems = ({allLocales, onClickHandler}) => {
@@ -28,7 +29,9 @@ const MyNavbar = ({actualLocale, allLocales, onClickHandler}) =>
         <Navbar.Collapse id="Navbar-Nav">
             <Nav className="flex-fill">
                 <LinkContainer to="/invoicerapp">
-                    <Nav.Link>Home</Nav.Link>
+                    <Nav.Link>
+                        <FormattedMessage id="navbar.home" />
+                    </Nav.Link>
                 </LinkContainer>
                 <NavDropdown
                     className="ms-auto dropstart"

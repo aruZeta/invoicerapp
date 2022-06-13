@@ -1,46 +1,77 @@
 import { useState } from "react";
 import { Card, Col, Form, Image, Row } from "react-bootstrap";
+import { useIntl } from "react-intl";
 
 import MyInput from './MyInput';
 
-const HeaderDetails = () =>
+const HeaderDetails = ({intl}) =>
 <Card.Body className="p-2 d-flex flex-column gap-2">
     <Form.Group>
-        <MyInput type="text" placeholder="Address" />
+        <MyInput
+            type="text"
+            placeholder={intl.formatMessage({id: "invoice.header.address"})}
+        />
     </Form.Group>
     <div className="d-flex gap-2">
         <Form.Group style={{flex: "1 1 100%"}}>
-            <MyInput type="text" placeholder="Town/City" />
+            <MyInput
+                type="text"
+                placeholder={intl.formatMessage({id: "invoice.header.town/city"})}
+            />
         </Form.Group>
         <Form.Group>
-            <MyInput className="text-end" type="text" placeholder="CP" />
+            <MyInput
+                className="text-end"
+                type="text"
+                placeholder={intl.formatMessage({id: "invoice.header.cp"})}
+            />
         </Form.Group>
         <Form.Group>
-            <MyInput className="text-end" type="text" placeholder="Date" />
+            <MyInput
+                className="text-end"
+                type="text"
+                placeholder={intl.formatMessage({id: "invoice.header.date"})}
+            />
         </Form.Group>
     </div>
     <div className="d-flex gap-2">
         <Form.Group style={{flex: "1 1 200%"}}>
-            <MyInput type="text" placeholder="Small Description" />
+            <MyInput
+                type="text"
+                placeholder={intl.formatMessage({id: "invoice.header.sm-desc"})}
+            />
         </Form.Group>
         <Form.Group>
-            <MyInput className="text-end" type="text" placeholder="N°" />
+            <MyInput
+                className="text-end"
+                type="text"
+                placeholder={intl.formatMessage({id: "invoice.header.no"})}
+            />
         </Form.Group>
     </div>
     <div className="d-flex gap-2">
         <Form.Group style={{flex: "0 1 35%"}}>
-            <MyInput className="" type="tel" placeholder="Telephone" />
+            <MyInput
+                className=""
+                type="tel"
+                placeholder={intl.formatMessage({id: "invoice.header.telephone"})}
+            />
         </Form.Group>
         <Form.Group className="flex-fill">
-            <MyInput className="text-end" type="email" placeholder="Email" />
+            <MyInput
+                className="text-end"
+                type="email"
+                placeholder={intl.formatMessage({id: "invoice.header.email"})}
+            />
         </Form.Group>
     </div>
 </Card.Body>;
 
 const InvoicePageHeader = () => {
+    const intl = useIntl();
+    
     const [image, setImage] = useState(
-        "https://via.placeholder.com/330x140/f2e9e1/575279?text=Click to change"
-    );
+        intl.formatMessage({id: "invoice.header.img"}));
 
     const changeImage = (event) => {
         console.log(event.target.files[0]);
@@ -71,7 +102,7 @@ const InvoicePageHeader = () => {
             </Col>
             <Col xs={7}>
                 <Card bg="light" className="w-100 h-100">
-                    <HeaderDetails />
+                    <HeaderDetails intl={intl} />
                 </Card>
             </Col>
         </Row>

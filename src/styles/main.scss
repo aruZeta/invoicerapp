@@ -51,6 +51,14 @@ $invoice-max-width: 21cm;
     max-width: $invoice-max-width;
 }
 
+.navbar-nav .dropdown-menu {
+    background-color: $secondary;
+
+    .dropdown-item:hover {
+        background-color: $rp-dawn-highlight-med;
+    }
+}
+
 // note: better open a new page and print from there
 @media print {
     .mt-4, .mb-4, .container-fluid {

@@ -1,12 +1,13 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import { Button, Card, Table } from "react-bootstrap";
+import { FormattedMessage } from "react-intl";
 
 import MyInput from './MyInput';
 
 const TableEntry = () => {
     const taRef = useRef(null);
-    const [taHeight, setTaHeight] = useState("auto"); 
-    
+    const [taHeight, setTaHeight] = useState("auto");
+
     const handleChange = (event) => setTaHeight(event.target.value);
 
     useLayoutEffect(() => {
@@ -61,10 +62,18 @@ const InvoicePageBody = () => {
                 <Table className="mb-0">
                     <thead>
                         <tr>
-                            <td className="text-center">Description</td>
-                            <td className="text-end">Quantity</td>
-                            <td className="text-end">Price</td>
-                            <td className="text-end">Total</td>
+                            <td className="text-center">
+                                <FormattedMessage id={"invoice.body.desc"} />
+                            </td>
+                            <td className="text-end">
+                                <FormattedMessage id={"invoice.body.quantity"} />
+                            </td>
+                            <td className="text-end">
+                                <FormattedMessage id={"invoice.body.price"} />
+                            </td>
+                            <td className="text-end">
+                                <FormattedMessage id={"invoice.body.total"} />
+                            </td>
                         </tr>
                     </thead>
                     <tbody>
@@ -77,7 +86,7 @@ const InvoicePageBody = () => {
                     variant="dark"
                     className="w-100 d-block"
                 >
-                    New Entry
+                    <FormattedMessage id={"invoice.body.newEntryBtn"} />
                 </Button>
             </Card.Body>
         </Card>

@@ -19,7 +19,12 @@
         "invoice.subheader.telephone": "Telephone",
         "invoice.subheader.address": "Address",
         "invoice.subheader.town/city": "Town/City",
-        "invoice.subheader.cp": "CP"
+        "invoice.subheader.cp": "CP",
+        "invoice.body.desc": "Description",
+        "invoice.body.quantity": "Quantity",
+        "invoice.body.price": "Price",
+        "invoice.body.total": "Total",
+        "invoice.body.newEntryBtn": "New entry"
     },
     "es": {
         "flag": "🇪🇸",
@@ -41,6 +46,11 @@
         "invoice.subheader.telephone": "Teléfono",
         "invoice.subheader.address": "Dirección",
         "invoice.subheader.town/city": "Pueblo/Ciudad",
-        "invoice.subheader.cp": "CP"
+        "invoice.subheader.cp": "CP",
+        "invoice.body.desc": "Descripción",
+        "invoice.body.quantity": "Cantidad",
+        "invoice.body.price": "Precio",
+        "invoice.body.total": "Total",
+        "invoice.body.newEntryBtn": "Nueva entrada"
     }
 }

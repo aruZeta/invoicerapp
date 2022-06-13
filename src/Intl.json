@@ -3,12 +3,30 @@
         "flag": "🇬🇧",
         "name": "English",
         "navbar.home": "Home Page",
-        "home.newInvoiceBtn": "New Invoice"
+        "home.newInvoiceBtn": "New Invoice",
+        "invoice.header.img": "https://via.placeholder.com/330x140/f2e9e1/575279?text=Change+the+image",
+        "invoice.header.address": "Address",
+        "invoice.header.town/city": "Town/City",
+        "invoice.header.cp": "CP",
+        "invoice.header.date": "Date",
+        "invoice.header.sm-desc": "Small Description",
+        "invoice.header.no": "N°",
+        "invoice.header.telephone": "Telephone",
+        "invoice.header.email": "Email"
     },
     "es": {
         "flag": "🇪🇸",
         "name": "Spanish",
         "navbar.home": "Página Principal",
-        "home.newInvoiceBtn": "Nueva Factura"
+        "home.newInvoiceBtn": "Nueva Factura",
+        "invoice.header.img": "https://via.placeholder.com/330x140/f2e9e1/575279?text=Cambiar+la+imagen",
+        "invoice.header.address": "Dirección",
+        "invoice.header.town/city": "Pueblo/Ciudad",
+        "invoice.header.cp": "CP",
+        "invoice.header.date": "Fecha",
+        "invoice.header.sm-desc": "Descripción Corta",
+        "invoice.header.no": "N°",
+        "invoice.header.telephone": "Teléfono",
+        "invoice.header.email": "Email"
     }
 }

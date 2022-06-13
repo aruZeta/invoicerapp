@@ -12,7 +12,14 @@
         "invoice.header.sm-desc": "Small Description",
         "invoice.header.no": "N°",
         "invoice.header.telephone": "Telephone",
-        "invoice.header.email": "Email"
+        "invoice.header.email": "Email",
+        "invoice.subheader.client": "Client",
+        "invoice.subheader.name": "Name",
+        "invoice.subheader.dni": "DNI",
+        "invoice.subheader.telephone": "Telephone",
+        "invoice.subheader.address": "Address",
+        "invoice.subheader.town/city": "Town/City",
+        "invoice.subheader.cp": "CP"
     },
     "es": {
         "flag": "🇪🇸",
@@ -27,6 +34,13 @@
         "invoice.header.sm-desc": "Descripción Corta",
         "invoice.header.no": "N°",
         "invoice.header.telephone": "Teléfono",
-        "invoice.header.email": "Email"
+        "invoice.header.email": "Email",
+        "invoice.subheader.client": "Cliente",
+        "invoice.subheader.name": "Nombre",
+        "invoice.subheader.dni": "DNI",
+        "invoice.subheader.telephone": "Teléfono",
+        "invoice.subheader.address": "Dirección",
+        "invoice.subheader.town/city": "Pueblo/Ciudad",
+        "invoice.subheader.cp": "CP"
     }
 }

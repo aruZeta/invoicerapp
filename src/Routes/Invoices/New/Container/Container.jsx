@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import { FormattedMessage } from 'react-intl';
 
 import InvoicePage from './InvoicePage';
 
@@ -38,7 +39,7 @@ const MyContainer = () => {
                         variant="dark"
                         className="new-invoice-btn mx-auto d-block"
                     >
-                        New Page
+                        <FormattedMessage id={"invoice.container.newPageBtn"} />
                     </Button>
                 </Col>
             </Row>

@@ -24,7 +24,8 @@
         "invoice.body.quantity": "Quantity",
         "invoice.body.price": "Price",
         "invoice.body.total": "Total",
-        "invoice.body.newEntryBtn": "New entry"
+        "invoice.body.newEntryBtn": "New entry",
+        "invoice.container.newPageBtn": "New Page"
     },
     "es": {
         "flag": "🇪🇸",
@@ -51,6 +52,7 @@
         "invoice.body.quantity": "Cantidad",
         "invoice.body.price": "Precio",
         "invoice.body.total": "Total",
-        "invoice.body.newEntryBtn": "Nueva entrada"
+        "invoice.body.newEntryBtn": "Nueva entrada",
+        "invoice.container.newPageBtn": "Nueva Página"
     }
 }

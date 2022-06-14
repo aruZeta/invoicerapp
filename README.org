@@ -1,0 +1,7 @@
+#+TITLE: Invoicerapp
+
+An app I made for my father to make invoices more easily, anywhere,
+from anything.
+
+This is a react web app whose only actual feature is to make simple
+invoices.
